@@ -11,7 +11,7 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Hello from the other side");
 });
 
-app.use("/api", smartphoneRouter);
+app.use("/api/smartphones", smartphoneRouter);
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

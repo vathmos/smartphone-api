@@ -9,14 +9,14 @@ import {
 
 const router = Router();
 
-router.get("/smartphones", getAllSmartphones);
+router.get("/", getAllSmartphones);
 
-router.get("/smartphones/:id", getSmartphoneById);
+router.get("/:id", getSmartphoneById);
 
-router.post("/smartphones", createSmartphone);
+router.post("/", createSmartphone);
 
-router.put("/smartphones/:id", editSmartphone);
+router.put("/:id", editSmartphone);
 
-router.delete("/smartphones/:id", deleteSmartphoneById);
+router.delete("/:id", deleteSmartphoneById);
 
 export default router;
